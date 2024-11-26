@@ -15,7 +15,7 @@ class WeatherScreen extends StatefulWidget {
 }
 
 class _WeatherScreenState extends State<WeatherScreen> {
-  TextEditingController _cityController = TextEditingController();
+  final TextEditingController _cityController = TextEditingController();
   late Future<Map<String, dynamic>> weather;
   Future<Map<String, dynamic>> getCurrentWeather([String cityName = 'Default City']) async {
     try {
